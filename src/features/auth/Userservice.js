@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const loginservice = async (formdata)=>{
-        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/api/profile/login", formdata)
+        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/profile/login", formdata)
         if(response.data.isadmin){
                 return
         }
