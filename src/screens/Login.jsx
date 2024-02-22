@@ -38,7 +38,7 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      toast.success("Registerd");
+      toast.success("Log in");
       navigate("/");
     }
   }, [user]);
