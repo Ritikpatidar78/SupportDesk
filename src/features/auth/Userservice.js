@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const loginservice = async (formdata)=>{
-        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/profile/login", formdata)
+        const response = await axios.post("/api/profile/login", formdata)
         if(response.data.isadmin){
                 return
         }
@@ -10,7 +10,7 @@ const loginservice = async (formdata)=>{
 }
 
 const registerservice = async (formdata) => {
-        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/profile/register", formdata)
+        const response = await axios.post("/api/profile/register", formdata)
         if(response.data.isadmin){
                 return
         }
