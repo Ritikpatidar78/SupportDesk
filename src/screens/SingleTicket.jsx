@@ -12,7 +12,6 @@ import Note from "../components/Note";
 import { toast } from "react-toastify";
 
 const SingleTicket = () => {
-  const API_URL = "https://supportdeskbackend-o50j.onrender.com/api";
   const { id } = useParams();
   const { sticket, isLoading, note, isError, message } = useSelector(
     (state) => state.ticket

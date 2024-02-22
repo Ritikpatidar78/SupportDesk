@@ -1,29 +1,3 @@
-// import React from "react";
-
-// const Note = ({ item }) => {
-//   return (
-//     <li className="list-group-item bg-secondary text-light my-2">
-//       <h2>{item.note}</h2>
-//       <p className="text-light">
-//         Date: {new Date(item.createdAt).toLocaleDateString("en-IN")} <br />
-//         Time: {new Date(item.createdAt).toLocaleTimeString("en-IN")}
-//       </p>
-
-//       {item.isstaff ? (
-//         <>
-//           <p className="text-light">From - Staff ({item.staffid})</p>
-//         </>
-//       ) : (
-//         <>
-//           <p className="text-light">From - Self</p>
-//         </>
-//       )}
-//     </li>
-//   );
-// };
-
-// export default Note;
-
 import React from "react";
 
 const Note = ({ item }) => {

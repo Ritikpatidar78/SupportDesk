@@ -10,7 +10,7 @@ const loginservice = async (formdata)=>{
 }
 
 const registerservice = async (formdata) => {
-        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/api/profile/register", formdata)
+        const response = await axios.post("https://supportdeskbackend-o50j.onrender.com/profile/register", formdata)
         if(response.data.isadmin){
                 return
         }

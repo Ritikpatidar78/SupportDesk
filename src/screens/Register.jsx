@@ -44,12 +44,6 @@ const Register = () => {
     setconfirmpassword("");
   };
 
-  // useEffect(() => {
-  //   if (isError) {
-  //     toast.error(message);
-  //   }
-  // }, [isError]);
-
   useEffect(() => {
     if (user) {
       toast.success("Registerd");
