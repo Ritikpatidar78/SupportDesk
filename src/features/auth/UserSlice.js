@@ -73,8 +73,6 @@ const AuthSlice = createSlice({
 })
 
 export default AuthSlice.reducer
-// export const {LOGOUT} = AuthSlice.actions
-
 
 export const login = createAsyncThunk("LOGIN/USER" , async(formdata,thunkAPI) => {
         try {
