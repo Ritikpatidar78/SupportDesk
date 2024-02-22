@@ -70,15 +70,17 @@ const SingleTicket = () => {
 
         <p>
           Status :{" "}
-          {sticket.status === "Closed" ? (
+          {sticket.status === "New" ? (
             <>
-              {" "}
-              <span className="badge text-bg-danger">{sticket.status}</span>
+              <span className="badge text-bg-success">{sticket.status}</span>
+            </>
+          ) : sticket.status === "Solved" ? (
+            <>
+              <span className="badge text-bg-primary">{sticket.status}</span>
             </>
           ) : (
             <>
-              {" "}
-              <span className="badge text-bg-success">{sticket.status}</span>
+              <span className="badge text-bg-danger">{sticket.status}</span>
             </>
           )}
         </p>
