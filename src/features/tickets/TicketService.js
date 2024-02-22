@@ -14,7 +14,7 @@ return data
 }
 
 const getallticketservice = async(token) => {
-    const response = await axios.get("https://supportdeskbackend-o50j.onrender.com/ticket",{
+    const response = await axios.get("https://supportdeskbackend-o50j.onrender.com/api/ticket",{
         headers: {
           'Authorization': 'Bearer ' + token 
         }
