@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://supportdeskbackend-o50j.onrender.com/api/",
+        target: "https://supportdeskbackend-o50j.onrender.com",
         changeOrigin: true,
         secure: false,
       },
